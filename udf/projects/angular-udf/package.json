@@ -1,8 +1,29 @@
 {
   "name": "angular-udf",
   "version": "0.0.1-beta",
+  "description":"A dynamic udf component using angular material",
+  "author": "9HUB",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/9hub/angular-udfs"
+  },
+  "bugs": {
+    "url": "https://github.com/9hub/angular-udfs/issues"
+  },
+  "contributors": [
+    "jesus.brayan.paye@gmail.com",
+    "baratheonts@gmail.com"
+  ],
+  "homepage": "https://github.com/9hub/angular-udfs",
+  "keywords": [
+    "angular",
+    "typescript",
+    "angular-material",
+    "UDFs"
+  ],
+  "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": "~7.2.0",
+    "@angular/core": "~7.2.0"
   }
 }

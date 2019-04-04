@@ -32,4 +32,4 @@ import { AngularUdfComponent } from './angular-udf.component';
   ],
   exports: [AngularUdfComponent]
 })
-export class PRUEVA1UDFModule { }
+export class AngularUdfModule { }
