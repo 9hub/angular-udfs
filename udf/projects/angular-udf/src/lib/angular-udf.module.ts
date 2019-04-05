@@ -4,6 +4,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 import {
   MatSlideToggleModule,
   MatNativeDateModule,
@@ -28,7 +30,9 @@ import { AngularUdfComponent } from './angular-udf.component';
     MatIconModule,
     MatMenuModule,
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    BrowserModule,
   ],
   exports: [AngularUdfComponent]
 })
