@@ -4,7 +4,7 @@
 
 | INSTALL:                    |
 | --------------------------- |
-| npm i angular-udf-beta      |
+| npm i angular-udf      |
 
 
 import {AngularUdfModule} from 'angular-udf.module'
