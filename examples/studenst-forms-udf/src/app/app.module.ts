@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PRUEVA1UDFModule } from 'angular-udf';
+import { AngularUdfModule } from 'angular-udf-beta';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -13,7 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PRUEVA1UDFModule,
+    AngularUdfModule,
     BrowserAnimationsModule,
   ],
   providers: [],
