@@ -75,7 +75,7 @@ export class AngularUdfComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
 
   ngOnInit() {
-    this.udfFormGroup.addControl('udfFormArray', this.udfFormArray);
+    this.udfFormGroup.addControl('udfValues', this.udfFormArray);
     this.udfData.forEach((data) => {
       this.udfFormArray.push(this.fb.group(
         {
