@@ -1,27 +1,33 @@
-# Udf
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+| INSTALL:                    |
+| --------------------------- |
+```batch
+npm i angular-udf
+```
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+| You need to import the following dependencies:|
+| --------------------------------------------------------------------- |
 
-## Code scaffolding
+```batch
+npm install --save @angular/material @angular/cdk @angular/animations
+ng add @angular/material
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+| It is very important that you copy the following code in your main styles.css file:|
+| ----------------------------------------------------------------- |
+```css
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css"
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+| API:                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------- |
+For your use you need to import the library in the following way
+```typescript
+import { AngularUdfModule } from 'angular-udf'
+```
+For its use you need to paste the tag, in udf Data you receive the array of the interface definition, in udfFormGroup you receive a FormGroup object
+```html
+<lib-angular-udf [udfData]="input-array-definition-interface" [udfFormGroup]="object-FormGrup" >  </lib-angular-udf>
+```

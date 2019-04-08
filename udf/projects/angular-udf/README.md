@@ -1,18 +1,33 @@
 
-
-
-
 | INSTALL:                    |
 | --------------------------- |
-| npm i angular-udf-beta      |
+```batch
+npm i angular-udf
+```
 
 
-import {AngularUdfModule} from 'angular-udf.module'
-![alt text][logo]
+| You need to import the following dependencies:|
+| --------------------------------------------------------------------- |
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+```batch
+npm install --save @angular/material @angular/cdk @angular/animations
+ng add @angular/material
+```
 
 
-| API:                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------ |
-| <lib-angular-udf [udfData]="input-array-definition-interface" [udfFormGroup]="object-FormGrup"> </lib-angular-udf> |
+| It is very important that you copy the following code in your main styles.css file:|
+| ----------------------------------------------------------------- |
+```css
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css"
+```
+
+| API:                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------- |
+For your use you need to import the library in the following way
+```typescript
+import { AngularUdfModule } from 'angular-udf'
+```
+For its use you need to paste the tag, in udf Data you receive the array of the interface definition, in udfFormGroup you receive a FormGroup object
+```html
+<lib-angular-udf [udfData]="input-array-definition-interface" [udfFormGroup]="object-FormGrup" >  </lib-angular-udf>
+```
