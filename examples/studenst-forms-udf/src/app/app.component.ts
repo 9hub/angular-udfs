@@ -9,8 +9,11 @@ import { UdfDefinition} from 'angular-udf';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+
+  // here is will get the data generate by the udf form
   public udfFormGroup = this.fb.group({});
-  // TODO: Revove this example data
+
+  // moks schemes where you can assign to generate udf
   public udfData = {
     data: [
       {
@@ -81,11 +84,8 @@ export class AppComponent {
       }
     ] as UdfDefinition[]
   };
-  
+
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
     ) { }
-
-
-
 }
