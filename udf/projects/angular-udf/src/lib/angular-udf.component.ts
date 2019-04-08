@@ -6,7 +6,7 @@ import { UdfValue } from './udf-value';
 
 @Component({
   selector: 'lib-angular-udf',
-  template: 
+  template:
   `
     <div [formGroup]="udfFormGroup" class="container">
       <div formArrayName="udfFormArray">
@@ -37,7 +37,7 @@ import { UdfValue } from './udf-value';
           </mat-slide-toggle>
         
           <mat-form-field *ngSwitchCase="'DATE'" appearance="outline" class="item-udf">
-            <input matInput [matDatepicker]="picker" placeholder="{{group.value.name}}" formControlName="value">
+            <input matInput [matDatepicker]="picker" placeholder="{{group.value.name}}" formControlName="value"  autocomplete="off">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker touchUi #picker></mat-datepicker>
           </mat-form-field>
@@ -46,26 +46,7 @@ import { UdfValue } from './udf-value';
       </div>
     </div>
   `,
-  styles: [
-  `
-    .container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    .item-udf {
-        width: 100%;
-    }
-
-    mat-slide-toggle {
-        margin: 10px;
-    }
-
-    .example-margin {
-        margin: 0 10px;
-    }
-  `
-  ]
+  styleUrls:['./style.css']
 })
 export class AngularUdfComponent implements OnInit {
   public udfFormArray = this.fb.array([]);

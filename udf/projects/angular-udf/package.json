@@ -1,6 +1,6 @@
 {
   "name": "angular-udf",
-  "version": "0.0.3",
+  "version": "0.0.4-beta",
   "description": "A dynamic udf component using angular material",
   "author": "9HUB",
   "repository": {
