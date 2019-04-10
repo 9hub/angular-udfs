@@ -1,8 +1,8 @@
 <div class="container">
   <h2 class="item-text">School registration form San Vicente de Paul</h2>
-  
+
   <!--the taglib-angular-udf was generated where you need udf data-->
-  <lib-angular-udf [udfData]="udfData.data" [udfFormGroup]="udfFormGroup" color="primary" class="form-item" color="primary"> </lib-angular-udf>
+  <udf [udfData]="udfData.data" [udfFormGroup]="udfFormGroup" color="primary" class="form-item" color="primary"> </udf>
   <p>Ouput Form</p>
   <ul class="list-item" *ngFor="let objs of udfFormGroup.value.udfFormArray">
     <li >{{objs.value | json}}</li>
