@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
-import { UdfDefinition} from 'angular-udf';
+import { UdfDefinition} from '@9hub/udf-component';
 
 @Component({
   selector: 'app-root',

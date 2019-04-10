@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { UdfDefinition } from'angular-udf-beta';
+import { UdfDefinition } from '@9hub/udf-component';
+import { UdfValue } from '@9hub/udf-component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { UdfDefinition } from'angular-udf-beta';
 })
 export class AppComponent {
   public udfFormGroup = this.fb.group({});
-  public data:UdfDefinition[] = [
+  public data: UdfDefinition[] = [
     {
       tenant_id: '123456XSDFAS',
       table_name: 'participante',

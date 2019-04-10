@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
-import { UdfDefinition } from './udf-definition';
-import { UdfValue } from './udf-value';
+import { UdfDefinition } from './interfaces/udf-definition';
+import { UdfValue } from './interfaces/udf-value';
 
 @Component({
-  selector: 'udf',
+  selector: 'udf-md',
   template:
   `
     <div [formGroup]="udfFormGroup" class="container">
@@ -46,9 +46,9 @@ import { UdfValue } from './udf-value';
       </div>
     </div>
   `,
-  styleUrls:['./style.css']
+  styleUrls: ['./style.css']
 })
-export class AngularUdfComponent implements OnInit {
+export class UdfComponent implements OnInit {
   public udfFormArray = this.fb.array([]);
   @Input() public udfData: UdfDefinition[];
   @Input() public udfFormGroup: FormGroup;

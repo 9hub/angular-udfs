@@ -15,10 +15,10 @@ import {
   MatMenuModule
 } from '@angular/material';
 
-import { AngularUdfComponent } from './angular-udf.component';
+import { UdfComponent } from './udf-component.component';
 
 @NgModule({
-  declarations: [AngularUdfComponent],
+  declarations: [UdfComponent],
   imports: [
     MatInputModule,
     MatSelectModule,
@@ -34,6 +34,6 @@ import { AngularUdfComponent } from './angular-udf.component';
     BrowserAnimationsModule,
     BrowserModule,
   ],
-  exports: [AngularUdfComponent]
+  exports: [UdfComponent]
 })
-export class AngularUdfModule { }
+export class UdfModule { }
