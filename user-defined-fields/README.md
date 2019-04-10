@@ -2,7 +2,7 @@
 | INSTALL:                    |
 | --------------------------- |
 ```batch
-npm i angular-udf
+npm i @9hub/udf-component --save
 ```
 
 
@@ -25,7 +25,7 @@ ng add @angular/material
 | --------------------------------------------------------------------------------------------------------------------- |
 For your use you need to import the library in the following way
 ```typescript
-import { AngularUdfModule } from 'angular-udf'
+import { UdfModule } from '@9hub/udf-component'
 ```
 For its use you need to paste the tag, in udf Data you receive the array of the interface definition, in udfFormGroup you receive a FormGroup object
 ```html
