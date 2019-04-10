@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularUdfComponent } from './angular-udf.component';
+import { UdfComponent } from './udf-component.component';
 
 describe('AngularUdfComponent', () => {
-  let component: AngularUdfComponent;
-  let fixture: ComponentFixture<AngularUdfComponent>;
+  let component: UdfComponent;
+  let fixture: ComponentFixture<UdfComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AngularUdfComponent ]
+      declarations: [ UdfComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AngularUdfComponent);
+    fixture = TestBed.createComponent(UdfComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

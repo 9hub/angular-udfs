@@ -133,33 +133,33 @@
         }
       }
     },
-    "angular-udf": {
-      "root": "projects/angular-udf",
-      "sourceRoot": "projects/angular-udf/src",
+    "udf-component": {
+      "root": "projects/udf-component",
+      "sourceRoot": "projects/udf-component/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "udf",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/angular-udf/tsconfig.lib.json",
-            "project": "projects/angular-udf/ng-package.json"
+            "tsConfig": "projects/udf-component/tsconfig.lib.json",
+            "project": "projects/udf-component/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/angular-udf/src/test.ts",
-            "tsConfig": "projects/angular-udf/tsconfig.spec.json",
-            "karmaConfig": "projects/angular-udf/karma.conf.js"
+            "main": "projects/udf-component/src/test.ts",
+            "tsConfig": "projects/udf-component/tsconfig.spec.json",
+            "karmaConfig": "projects/udf-component/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/angular-udf/tsconfig.lib.json",
-              "projects/angular-udf/tsconfig.spec.json"
+              "projects/udf-component/tsconfig.lib.json",
+              "projects/udf-component/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -169,5 +169,5 @@
       }
     }
   },
-  "defaultProject": "udf"
+  "defaultProject": "user-defined-fields"
 }
