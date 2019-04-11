@@ -1,6 +1,6 @@
 {
   "name": "@9hub/udf-component",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A dynamic udf component using angular material",
   "author": "9HUB",
   "repository": {

@@ -29,5 +29,5 @@ import { UdfModule } from '@9hub/udf-component'
 ```
 For its use you need to paste the tag, in udf Data you receive the array of the interface definition, in udfFormGroup you receive a FormGroup object
 ```html
-<lib-angular-udf [udfData]="input-array-definition-interface" [udfFormGroup]="object-FormGrup" >  </lib-angular-udf>
+<udf-md [udfData]="input-array-definition-interface" [udfFormGroup]="object-FormGrup" >  </udf-md>
 ```
