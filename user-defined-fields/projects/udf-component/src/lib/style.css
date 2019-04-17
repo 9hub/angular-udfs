@@ -3,12 +3,3 @@
     flex-direction: column;
     width: 100%;
 }
-.item-udf {
-    width: 100%;
-}
-mat-slide-toggle {
-    margin: 10px;
-}
-.example-margin {
-    margin: 0 10px;
-}
