@@ -1,11 +1,41 @@
 <div class="container">
   <h2 class="item-text">School registration form San Vicente de Paul</h2>
-
-  <!--the taglib-angular-udf was generated where you need udf data-->
-  <udf-md [udfData]="udfData.data" [udfFormGroup]="udfFormGroup" color="primary" class="form-item" color="primary"> </udf-md>
+    <!-- the taglib-angular-udf was generated where you need udf data -->
+    <udf-md [udfData]="udfData" [udfFormGroup]="udfFormGroup" color="primary" class="form-item" color="primary"> </udf-md>
   <p>Ouput Form</p>
-  <ul class="list-item" *ngFor="let objs of udfFormGroup.value.udfFormArray">
-    <li >{{objs.value | json}}</li>
-  </ul>
+  {{ udfFormGroup.valid }}
+  {{ udfFormGroup.value | json }}
+</div>
+<div class="container">
+  <!-- ADDRESS SECTION -->
+  <mat-card class="card-form" fxFlex="auto">
+    <div class="header-text">Address</div>
+    <mat-card-content fxLayout="column">
+      <!-- LINE 1 INPUT -->
+      <udf-field-md [fieldConfig]="AddressLine1" [udfFormGroup]="udfFieldFormGroup" ></udf-field-md>
+      <!-- LINE 2 INPUT -->
+      <udf-field-md [fieldConfig]="AddressLine2" [udfFormGroup]="udfFieldFormGroup" ></udf-field-md>
+      <div fxLayout="row wrap">
+        <!-- CITY INPUT -->
+        <div fxFlex="50%">
+          <udf-field-md [fieldConfig]="City" [udfFormGroup]="udfFieldFormGroup" ></udf-field-md>
+        </div>
+        <!-- STATE INPUT -->
+        <div fxFlex="50%">
+          <udf-field-md [fieldConfig]="State" [udfFormGroup]="udfFieldFormGroup" ></udf-field-md>
+        </div>
+      </div>
+      <div fxLayout="row wrap">
+         <!-- COUNTRY INPUT -->
+         <div fxFlex="50%">
+           <udf-field-md [fieldConfig]="Country" [udfFormGroup]="udfFieldFormGroup" ></udf-field-md>
+         </div>
+        <!-- POSTCODE INPUT -->
+        <div fxFlex="50%">
+          <udf-field-md [fieldConfig]="PostCode" [udfFormGroup]="udfFieldFormGroup" ></udf-field-md>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
 </div>
 <router-outlet></router-outlet>
