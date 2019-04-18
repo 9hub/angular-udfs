@@ -53,6 +53,14 @@ export class AppComponent {
 
     },
     {
+      type: 'MULTI_SELECT',
+      name: 'Countries',
+      placeholder: 'Countries',
+      default_value: ['Bolivia', 'Chile'],
+      options: [ 'Bolivia', 'Chile', 'Mexico', 'Ecuador', 'Uruguay', 'Argentina' ],
+      validation: []
+    },
+    {
         type: 'YES_OR_NO',
         name: 'TestCheck',
         placeholder: 'Do you agree?',

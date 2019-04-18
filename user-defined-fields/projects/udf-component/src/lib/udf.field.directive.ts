@@ -16,7 +16,7 @@ import { FormAnyTextComponent } from './components/field.anytext';
 import { FormNumberComponent } from './components/field.number';
 import { FormDateComponent } from './components/field.date';
 import { FormYesOrNoComponent } from './components/field.yesorno';
-// import { FormMultiSelect } from './components/field.multiselect';
+import { MultiSelectComponent } from './components/multi-select.component';
 
 import { UdfField } from './models/udf.interface';
 import { UdfFieldDefinition } from './models/udf.definition.interface';
@@ -29,7 +29,7 @@ const components: {[type: string]: Type<UdfField>} = {
   NUMBER: FormNumberComponent,
   DATE: FormDateComponent,
   YES_OR_NO: FormYesOrNoComponent,
-  // MULTI_SELECT: FormMultiSelect
+  MULTI_SELECT: MultiSelectComponent
 };
 
 @Directive({

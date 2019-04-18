@@ -15,6 +15,7 @@ import { FormAnyTextComponent } from './components/field.anytext';
 import { FormNumberComponent } from './components/field.number';
 import { FormDateComponent } from './components/field.date';
 import { FormYesOrNoComponent } from './components/field.yesorno';
+import { MultiSelectComponent } from './components/multi-select.component';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ import { FormYesOrNoComponent } from './components/field.yesorno';
     FormAnyTextComponent,
     FormNumberComponent,
     FormDateComponent,
-    FormYesOrNoComponent
+    FormYesOrNoComponent,
+    MultiSelectComponent
   ],
   exports: [
     UdfsComponent,
@@ -45,7 +47,8 @@ import { FormYesOrNoComponent } from './components/field.yesorno';
     FormAnyTextComponent,
     FormNumberComponent,
     FormDateComponent,
-    FormYesOrNoComponent
+    FormYesOrNoComponent,
+    MultiSelectComponent
   ]
 })
 export class UdfModule {}
